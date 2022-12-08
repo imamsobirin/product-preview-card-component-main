@@ -1,0 +1,116 @@
+:root {
+  --prim-dark-cyan: hsl(158, 36%, 37%);
+  --prim-cream: hsl(30, 38%, 92%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --White: hsl(0, 0%, 100%);
+}
+p {
+  font-size: 14px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid red; */
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--prim-cream);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 10px;
+  height: 90%;
+  background-color: var(--White);
+  overflow: hidden;
+}
+.banner {
+  height: 40%;
+  background-image: url(./images/image-product-mobile.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.details {
+  padding: 30px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.details__title,
+.price--big {
+  font-family: "Fraunces", serif;
+}
+.details__item {
+  letter-spacing: 3px;
+  color: var(--Dark-grayish-blue);
+}
+.details__description {
+  color: var(--Dark-grayish-blue);
+}
+.details__title {
+  /* font-size: 20px; */
+  font-weight: 700;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--Very-dark-blue);
+}
+.details__price {
+  display: flex;
+  align-items: center;
+  color: var(--Dark-grayish-blue);
+}
+.price--big {
+  color: var(--prim-dark-cyan);
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 30px;
+}
+.price--small {
+  text-decoration: line-through;
+}
+.btn {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  border: none;
+  background-color: var(--prim-dark-cyan);
+  color: var(--White);
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.btn:hover {
+  background-color: rgb(5, 100, 65);
+}
+.attribution {
+  text-align: center;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 376px) {
+  .container {
+    width: 600px;
+    flex-direction: row;
+    height: 450px;
+  }
+  .details {
+    height: 100%;
+    width: 50%;
+  }
+  .banner {
+    background-image: url(./images/image-product-desktop.jpg);
+    width: 50%;
+    height: 100%;
+  }
+}
