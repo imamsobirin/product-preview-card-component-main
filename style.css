@@ -50,7 +50,7 @@ body {
 .price--big {
   font-family: "Fraunces", serif;
 }
-.details__item {
+.details__item P {
   letter-spacing: 3px;
   color: var(--Dark-grayish-blue);
 }
