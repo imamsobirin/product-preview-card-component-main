@@ -12,7 +12,7 @@ p {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 body {
   font-family: "Montserrat", sans-serif;
@@ -98,7 +98,7 @@ body {
   margin-top: 5px;
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 375px) {
   .container {
     width: 600px;
     flex-direction: row;
